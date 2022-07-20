@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const products = require('../seeds/products');
 const Product = require('../models/product');
 
-
 const connectDB = async () => {
   try {
     const connect = await mongoose.connect(process.env.MONGO_URI);
@@ -16,8 +15,7 @@ const connectDB = async () => {
     };
 
     seedDB().then(() => {
-      console.log('closing');
-      mongoose.connection.close();
+      console.log('db seeded');
     });
   } catch (e) {
     process.exit(1);
