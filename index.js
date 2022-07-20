@@ -1,8 +1,12 @@
+if (process.env.NODE_ENV !== 'production') {
+  const dotenv = require('dotenv').config();
+}
+
 const express = require('express');
-const dotenv = require('dotenv').config();
 const PORT = process.env.PORT || 5000;
 const ExpressError = require('./ExpressError');
 const connectDB = require('./config/db');
+
 
 // connect to mongoose
 connectDB();
