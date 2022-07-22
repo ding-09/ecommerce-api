@@ -20,10 +20,10 @@
         <a class='url'>http://mock-product-api.herokuapp.com</a>
       </article>
       <section class="routes">
-        <%- include('partials/route', {pathname: '', description: 'Get all product'})%>
-        <%- include('partials/route', {pathname: '/sale', description: 'Get all product'})%>
-        <%- include('partials/route', {pathname: '/:id', description: 'Get all product'})%>
-        <%- include('partials/route', {pathname: '?category=women', description: 'Get all product'})%>
+        <%- include('partials/route', {pathname: '', description: 'Get all products'})%>
+        <%- include('partials/route', {pathname: '/sale', description: 'Get all products on sale'})%>
+        <%- include('partials/route', {pathname: '/:id', description: 'Get a specific product'})%>
+        <%- include('partials/route', {pathname: '?category=women', description: 'Get a specific category - women, men, kids'})%>
       </section>
     </main>
     <%- include('partials/footer')%>
