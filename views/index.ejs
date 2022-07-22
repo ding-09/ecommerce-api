@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mock E-Commerce API</title>
     <link rel='stylesheet' href='/app.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Mock E-Commerce API</title>
   </head>
   <body>
     <%- include('partials/header')%>
     <main>
-      <h2>Usage</h2>
-      <article>
-        <h3>Base URL</h3>
-        <a>http://mock-ecommerceapi.herokuapp.com</a>
+      <h2 class='heading'>Usage</h2>
+      <article class='base-url'>
+        <h3 class='heading'>Base URL</h3>
+        <a class='url'>http://mock-ecommerceapi.herokuapp.com</a>
       </article>
-      <%- include('partials/route', {pathname: '', description: 'Get all product'})%>
-      <%- include('partials/route', {pathname: '/sale', description: 'Get all product'})%>
-      <%- include('partials/route', {pathname: '/:id', description: 'Get all product'})%>
-      <%- include('partials/route', {pathname: '?category=women', description: 'Get all product'})%>
+      <section class="routes">
+        <%- include('partials/route', {pathname: '', description: 'Get all product'})%>
+        <%- include('partials/route', {pathname: '/sale', description: 'Get all product'})%>
+        <%- include('partials/route', {pathname: '/:id', description: 'Get all product'})%>
+        <%- include('partials/route', {pathname: '?category=women', description: 'Get all product'})%>
+      </section>
     </main>
     <%- include('partials/footer')%>
   </body>

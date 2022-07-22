@@ -8,7 +8,100 @@ html {
   font-size: 62.5%;
 }
 
-.token {
-  display: inline;
-  color: red;
+body {
+  background-color: #1b1b1b;
+  color: #f9f9f9;
+  font-family: 'Courier Prime', monospace;
+  padding: 3rem 2.4rem 0;
+  letter-spacing: 0.1rem;
+}
+
+header {
+  margin-bottom: 2.4rem;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+header p {
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.base-url {
+  margin-bottom: 3rem;
+}
+
+.heading {
+  color: #3ef100;
+}
+
+.routes {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.route h3 {
+  text-transform: uppercase;
+}
+
+.url {
+  color: #f9e361;
+  text-transform: lowercase;
+  font-size: 1.4rem;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.1rem;
+}
+
+.token.function {
+  color: #53fa19;
+}
+
+.token.punctuation {
+  opacity: 0.5;
+}
+
+.token.string {
+  color: #f9e361;
+}
+
+pre {
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.code-block-container {
+  background-color: #282828;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1px 0 rgba(255, 255, 255, 1);
+  line-height: 1.4rem;
+  margin-top: 1.4rem;
+  padding: 1.2rem 1rem;
+}
+
+code {
+  font-size: 1.1rem;
 }
