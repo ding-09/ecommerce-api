@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mock E-Commerce API</title>
+    <link rel='stylesheet' href='/app.css'>
+  </head>
+  <body>
+    <%- include('partials/header')%>
+    <main>
+      <h2>Usage</h2>
+      <article>
+        <h3>Base URL</h3>
+        <a>http://mock-ecommerceapi.herokuapp.com</a>
+      </article>
+      <%- include('partials/route', {pathname: '', description: 'Get all product'})%>
+      <%- include('partials/route', {pathname: '/sale', description: 'Get all product'})%>
+      <%- include('partials/route', {pathname: '/:id', description: 'Get all product'})%>
+      <%- include('partials/route', {pathname: '?category=women', description: 'Get all product'})%>
+    </main>
+    <%- include('partials/footer')%>
+  </body>
+</html>
