@@ -27,6 +27,8 @@ header h1 {
 
 header p {
   letter-spacing: 0.1rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
 
 h2 {
@@ -41,7 +43,20 @@ h3 {
 
 footer {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 3rem;
+}
+
+footer .fa-github {
+  color: #3ef100;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+footer a {
+  color: #f9e361;
+  display: inline;
 }
 
 .base-url {
@@ -91,17 +106,31 @@ pre {
   display: block;
   white-space: pre-wrap;
   word-wrap: break-word;
+  padding: 1.6rem 3rem 1.6rem 1.4rem;
+}
+
+code {
+  font-size: 1.1rem;
 }
 
 .code-block-container {
   background-color: #282828;
   border-radius: 0.5rem;
   box-shadow: 0 0 1px 0 rgba(255, 255, 255, 1);
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   margin-top: 1.4rem;
-  padding: 1.2rem 1rem;
+  position: relative;
 }
 
-code {
-  font-size: 1.1rem;
+.copy-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  cursor: pointer;
+}
+
+.fa-copy {
+  color: #f9f9f9;
 }
