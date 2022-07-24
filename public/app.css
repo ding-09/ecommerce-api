@@ -136,3 +136,37 @@ code {
 .fa-copy {
   color: #f9f9f9;
 }
+
+.tooltip {
+  display: block;
+  visibility: hidden;
+  padding: 0.2rem 0.8rem 0.2rem 1rem;
+  position: absolute;
+  top: -1.8rem;
+  right: -0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.5rem;
+  background-color: #1b1b1b;
+  color: #53fa19;
+}
+
+.tooltip-animation {
+  animation-name: tooltip-transition;
+  animation-duration: 900ms;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tooltip-transition {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
