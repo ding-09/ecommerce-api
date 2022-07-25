@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: "Courier Prime", monospace;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
 }
 
@@ -22,7 +23,7 @@ header h1 {
 }
 header p {
   line-height: 2rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 footer {
@@ -102,15 +103,33 @@ pre {
   padding: 1.6rem 4rem 1.6rem 1.4rem;
 }
 
-code {
-  font-size: 1.1rem;
-  font-weight: 700;
-}
 code .token.function {
   color: #53FA19;
 }
 code .token.punctuation {
   opacity: 0.5;
+}
+code .token.string {
+  color: #F9E361;
+}
+
+.routes .usage {
+  margin-bottom: 2rem;
+}
+.routes .container {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.routes .container .route h3 {
+  text-transform: uppercase;
+}
+.routes .container .route .pathname {
+  font-weight: 700;
+}
+.routes .container .route .description {
+  letter-spacing: 0;
 }
 
 body {
@@ -121,12 +140,11 @@ body {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 2rem;
 }
 
 h3 {
   font-size: 1.8rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 
 .heading {
@@ -134,28 +152,14 @@ h3 {
 }
 
 .base-url {
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
 }
 
 .url {
   color: #f9e361;
   text-transform: lowercase;
   font-size: 1.4rem;
-  font-weight: 700;
   letter-spacing: 0;
-}
-
-.routes {
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-.routes .route h3 {
-  text-transform: uppercase;
-}
-.routes .description {
-  font-size: 1.1rem;
 }
 
 /*# sourceMappingURL=app.css.map */

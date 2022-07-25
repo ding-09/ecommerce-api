@@ -4,6 +4,7 @@
 @use 'layout/header';
 @use 'layout/footer';
 @use 'layout/codeBlock';
+@use 'layout/routes';
 
 body {
   background-color: variables.$primary-bg-color;
@@ -13,12 +14,11 @@ body {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 2rem;
 }
 
 h3 {
   font-size: 1.8rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.8rem;
 }
 
 .heading {
@@ -26,28 +26,12 @@ h3 {
 }
 
 .base-url {
-  margin-bottom: 3rem;
+  margin-bottom: 2.4rem;
 }
 
 .url {
   color: #f9e361;
   text-transform: lowercase;
   font-size: 1.4rem;
-  font-weight: 700;
   letter-spacing: 0;
-}
-
-.routes {
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  .route {
-    h3 {
-      text-transform: uppercase;
-    }
-  }
-  .description {
-    font-size: 1.1rem;
-  }
 }

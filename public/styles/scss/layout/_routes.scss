@@ -1,0 +1,22 @@
+.routes {
+  .usage {
+    margin-bottom: 2rem;
+  }
+  .container {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    .route {
+      h3 {
+        text-transform: uppercase;
+      }
+      .pathname {
+        font-weight: 700;
+      }
+      .description {
+        letter-spacing: 0;
+      }
+    }
+  }
+}

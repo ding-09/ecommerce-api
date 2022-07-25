@@ -19,12 +19,13 @@ pre {
 }
 
 code {
-  font-size: 1.1rem;
-  font-weight: 700;
   .token.function {
     color: variables.$code-fn-text-color;
   }
   .token.punctuation {
     opacity: 0.5;
+  }
+  .token.string {
+    color: variables.$url-text-color;
   }
 }
