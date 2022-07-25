@@ -138,12 +138,16 @@ body {
   padding: 3rem 2.4rem 0;
 }
 
+h2,
+h3 {
+  font-size: 1.8rem;
+}
+
 h2 {
-  font-size: 2rem;
+  margin-bottom: 0.6rem;
 }
 
 h3 {
-  font-size: 1.8rem;
   margin-bottom: 0.8rem;
 }
 
