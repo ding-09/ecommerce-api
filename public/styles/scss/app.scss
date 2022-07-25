@@ -1,0 +1,53 @@
+@use 'base/_reset';
+@use 'base/_typography';
+@use 'abstracts/variables';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'layout/codeBlock';
+
+body {
+  background-color: variables.$primary-bg-color;
+  color: variables.$primary-text-color;
+  padding: 3rem 2.4rem 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.heading {
+  color: variables.$theme-text-color;
+}
+
+.base-url {
+  margin-bottom: 3rem;
+}
+
+.url {
+  color: #f9e361;
+  text-transform: lowercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.routes {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  .route {
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+  .description {
+    font-size: 1.1rem;
+  }
+}

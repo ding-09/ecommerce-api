@@ -1,0 +1,12 @@
+@use '../abstracts/variables';
+.copy-btn {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  cursor: pointer;
+  .fa-copy {
+    color: variables.$primary-text-color;
+  }
+}

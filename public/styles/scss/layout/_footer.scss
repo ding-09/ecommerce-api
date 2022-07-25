@@ -1,0 +1,17 @@
+@use '../abstracts/variables';
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  .fa-github {
+    color: variables.$theme-text-color;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  a {
+    color: variables.$url-text-color;
+    font-weight: 700;
+  }
+}
