@@ -1,19 +1,23 @@
-// select all copyBtns
-const copyBtns = document.querySelectorAll('.copy-btn');
-
-copyBtns.forEach((copyBtn) =>
-  copyBtn.addEventListener('click', (e) => {
-    // copy code block when copy icon is clicked
-    const pre = e.currentTarget.previousElementSibling;
+document.addEventListener('click', (e) => {
+  // check if copy icon is clicked
+  if (e.target.matches('.fa-copy')) {
+    // copy code block when clicked
+    const pre = e.target.parentElement.previousElementSibling;
     const codeBlock = pre.firstChild.innerText;
     navigator.clipboard.writeText(codeBlock);
 
-    // toggle tooltip after copy icon has been clicked
-    const tooltip = e.currentTarget.nextElementSibling;
-    tooltip.classList.add('tooltip-animation');
+    // toggle tooltip animation
+    toggleTootip(e);
+  }
+});
 
-    setTimeout(() => {
-      tooltip.classList.remove('tooltip-animation');
-    }, 1500);
-  })
-);
+const toggleTootip = (e) => {
+  // toggle tooltip animation
+  const tooltip = e.target.parentElement.nextElementSibling;
+  tooltip.classList.add('tooltip-animation');
+
+  // remove tooltip animation to trigger animation restart
+  setTimeout(() => {
+    tooltip.classList.remove('tooltip-animation');
+  }, 1500);
+};
