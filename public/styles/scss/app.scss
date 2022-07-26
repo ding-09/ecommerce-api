@@ -1,3 +1,4 @@
+@use 'base/_base';
 @use 'base/_reset';
 @use 'base/_typography';
 @use 'abstracts/variables';
@@ -5,37 +6,3 @@
 @use 'layout/footer';
 @use 'layout/codeBlock';
 @use 'layout/routes';
-
-body {
-  background-color: variables.$primary-bg-color;
-  color: variables.$primary-text-color;
-  padding: 3rem 2.4rem 0;
-}
-
-h2,
-h3 {
-  font-size: 1.8rem;
-}
-
-h2 {
-  margin-bottom: 0.6rem;
-}
-
-h3 {
-  margin-bottom: 0.8rem;
-}
-
-.heading {
-  color: variables.$theme-text-color;
-}
-
-.base-url {
-  margin-bottom: 2.4rem;
-}
-
-.url {
-  color: #f9e361;
-  text-transform: lowercase;
-  font-size: 1.4rem;
-  letter-spacing: 0;
-}
