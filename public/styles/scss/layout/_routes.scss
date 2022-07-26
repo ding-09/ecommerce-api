@@ -1,8 +1,7 @@
+@use '../abstracts/variables';
+
 .routes {
   margin-bottom: 5.2rem;
-  .usage {
-    margin-bottom: 2rem;
-  }
   .container {
     display: flex;
     flex-direction: column;
@@ -17,6 +16,18 @@
       .description {
         letter-spacing: 0;
       }
+    }
+  }
+  // media query
+  @media screen and (min-width: variables.$responsive-md) {
+    margin-bottom: 10rem;
+    .container {
+      gap: 5.6rem;
+    }
+  }
+  @media screen and (min-width: variables.$responsive-xl) {
+    .container {
+      gap: 8rem;
     }
   }
 }

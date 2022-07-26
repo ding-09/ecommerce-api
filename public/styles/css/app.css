@@ -1,35 +1,114 @@
 body {
   background-color: #1b1b1b;
   color: #f9f9f9;
-  padding: 3rem 2.4rem 0;
+  max-width: 90%;
+  margin: 3rem auto;
+}
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 80%;
+    margin: 4rem auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    margin: 5.6rem auto 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    max-width: 70%;
+    margin: 8rem auto 4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  body {
+    max-width: 65%;
+    margin: 14rem auto 4rem;
+  }
 }
 
 h2,
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  h2,
+h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2,
+h3 {
+    font-size: 2.2rem;
+  }
 }
 
 h2 {
   margin-bottom: 0.6rem;
 }
+@media screen and (min-width: 768px) {
+  h2 {
+    margin-bottom: 1.2rem;
+  }
+}
 
 h3 {
   margin-bottom: 0.8rem;
 }
+@media screen and (min-width: 1200px) {
+  h3 {
+    margin-bottom: 1.2rem;
+  }
+}
 
 .heading {
-  color: #3EF100;
+  color: #3ef100;
 }
 
 .base-url {
   margin-bottom: 2.4rem;
 }
+@media screen and (min-width: 768px) {
+  .base-url {
+    margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .base-url {
+    margin-bottom: 4.8rem;
+  }
+}
 
 .url {
   color: #f9e361;
   text-transform: lowercase;
-  font-size: 1.4rem;
   letter-spacing: 0;
+}
+@media screen and (min-width: 768px) {
+  .url {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .url {
+    font-size: 1.8rem;
+  }
+}
+
+footer, code, .description {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  footer, code, .description {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer, code, .description {
+    font-size: 1.6rem;
+  }
 }
 
 * {
@@ -44,8 +123,18 @@ html {
 
 body {
   font-family: "Courier Prime", monospace;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.1rem;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.8rem;
+  }
 }
 
 header {
@@ -57,7 +146,23 @@ header h1 {
 }
 header p {
   line-height: 2rem;
-  font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+  header {
+    margin-bottom: 4rem;
+  }
+  header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 1.2rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    margin-bottom: 4.8rem;
+  }
+  header h1 {
+    font-size: 3rem;
+  }
 }
 
 footer {
@@ -67,13 +172,18 @@ footer {
   margin-bottom: 3rem;
 }
 footer .fa-github {
-  color: #3EF100;
+  color: #3ef100;
   font-size: 1.6rem;
 }
 footer a {
-  color: #F9E361;
+  color: #f9e361;
   font-weight: 700;
   margin-bottom: 0.8rem;
+}
+@media screen and (min-width: 1200px) {
+  footer .fa-github {
+    font-size: 2.4rem;
+  }
 }
 
 .copy-btn {
@@ -87,18 +197,35 @@ footer a {
 .copy-btn .fa-copy {
   color: #f9f9f9;
 }
+@media screen and (min-width: 768px) {
+  .copy-btn {
+    top: 1.2rem;
+    right: 1.6rem;
+  }
+  .copy-btn .fa-copy {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .copy-btn {
+    top: 1.6rem;
+    right: 2rem;
+  }
+}
 
 .tooltip {
   display: block;
   visibility: hidden;
-  padding: 0.2rem 0.8rem 0.2rem 1rem;
+  padding: 0.4rem 0.6rem 0.4rem 0.8rem;
   position: absolute;
-  top: -1.8rem;
+  top: -2rem;
   right: -0.2rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0.5rem;
   background-color: #1b1b1b;
-  color: #3EF100;
+  color: #3ef100;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 .tooltip-animation {
@@ -125,33 +252,49 @@ footer a {
   background-color: #282828;
   border-radius: 0.5rem;
   box-shadow: 0 0 1px 0 rgb(255, 255, 255);
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   margin-top: 1.4rem;
   position: relative;
 }
-
-pre {
+.code-block-container pre {
   display: block;
   white-space: pre-wrap;
   word-wrap: break-word;
   padding: 1.6rem 4rem 1.6rem 1.4rem;
 }
-
-code .token.function {
-  color: #53FA19;
+.code-block-container pre code {
+  letter-spacing: 0;
 }
-code .token.punctuation {
+.code-block-container pre code .token.function {
+  color: #53fa19;
+}
+.code-block-container pre code .token.punctuation {
   opacity: 0.5;
 }
-code .token.string {
-  color: #F9E361;
+.code-block-container pre code .token.string {
+  color: #f9e361;
+}
+@media screen and (min-width: 768px) {
+  .code-block-container {
+    line-height: 2.6rem;
+    margin-top: 1.6rem;
+  }
+  .code-block-container pre {
+    padding: 2.8rem 3.6rem 2.8rem 2.4rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .code-block-container {
+    line-height: 3.2rem;
+    margin-top: 2.4rem;
+  }
+  .code-block-container pre {
+    padding: 2.8rem;
+  }
 }
 
 .routes {
   margin-bottom: 5.2rem;
-}
-.routes .usage {
-  margin-bottom: 2rem;
 }
 .routes .container {
   display: flex;
@@ -166,6 +309,19 @@ code .token.string {
 }
 .routes .container .route .description {
   letter-spacing: 0;
+}
+@media screen and (min-width: 768px) {
+  .routes {
+    margin-bottom: 10rem;
+  }
+  .routes .container {
+    gap: 5.6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .routes .container {
+    gap: 8rem;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

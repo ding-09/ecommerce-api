@@ -1,3 +1,5 @@
+@use '../abstracts/variables';
+
 header {
   margin-bottom: 2.4rem;
   h1 {
@@ -6,6 +8,19 @@ header {
   }
   p {
     line-height: 2rem;
-    font-size: 1.4rem;
+  }
+  // MEDIA QUERY
+  @media screen and (min-width: variables.$responsive-md) {
+    margin-bottom: 4rem;
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+  @media screen and (min-width: variables.$responsive-xl) {
+    margin-bottom: 4.8rem;
+    h1 {
+      font-size: 3rem;
+    }
   }
 }

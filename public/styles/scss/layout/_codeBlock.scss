@@ -6,26 +6,40 @@
   background-color: variables.$code-bg-color;
   border-radius: 0.5rem;
   box-shadow: 0 0 1px 0 rgba(255, 255, 255, 1);
-  line-height: 1.6rem;
+  line-height: 1.8rem;
   margin-top: 1.4rem;
   position: relative;
-}
-
-pre {
-  display: block;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 1.6rem 4rem 1.6rem 1.4rem;
-}
-
-code {
-  .token.function {
-    color: variables.$code-fn-text-color;
+  pre {
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 1.6rem 4rem 1.6rem 1.4rem;
+    code {
+      letter-spacing: 0;
+      .token.function {
+        color: variables.$code-fn-text-color;
+      }
+      .token.punctuation {
+        opacity: 0.5;
+      }
+      .token.string {
+        color: variables.$url-text-color;
+      }
+    }
   }
-  .token.punctuation {
-    opacity: 0.5;
+  // MEDIA QUERY
+  @media screen and (min-width: variables.$responsive-md) {
+    line-height: 2.6rem;
+    margin-top: 1.6rem;
+    pre {
+      padding: 2.8rem 3.6rem 2.8rem 2.4rem;
+    }
   }
-  .token.string {
-    color: variables.$url-text-color;
+  @media screen and (min-width: variables.$responsive-xl) {
+    line-height: 3.2rem;
+    margin-top: 2.4rem;
+    pre {
+      padding: 2.8rem;
+    }
   }
 }

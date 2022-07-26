@@ -1,5 +1,13 @@
+@use '../abstracts/variables';
+
 body {
   font-family: 'Courier Prime', monospace;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.1rem;
+  @media screen and (min-width: variables.$responsive-md) {
+    font-size: 1.6rem;
+  }
+  @media screen and (min-width: variables.$responsive-xl) {
+    font-size: 1.8rem;
+  }
 }

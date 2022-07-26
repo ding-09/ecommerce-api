@@ -9,4 +9,15 @@
   .fa-copy {
     color: variables.$primary-text-color;
   }
+  @media screen and (min-width: variables.$responsive-md) {
+    top: 1.2rem;
+    right: 1.6rem;
+    .fa-copy {
+      font-size: 1.6rem;
+    }
+  }
+  @media screen and (min-width: variables.$responsive-md) {
+    top: 1.6rem;
+    right: 2rem;
+  }
 }
