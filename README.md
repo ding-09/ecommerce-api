@@ -1,7 +1,7 @@
 
 # Mock Product Data API 
 
-Plain and simple API that returns fake product data.
+Plain and simple API that returns fake product data. Visit [here](https://mock-products-api.herokuapp.com/).
 
 ## About
 The motivation for this API stemmed from the need for authentic e-commerce data with good quality product images. It also helped me dip my toes in backend development and get to understand the basics of how frontend and backend work together harmoniously :).
