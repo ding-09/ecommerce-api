@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, '/views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // connect to mongoose
-// connectDB();
+connectDB();
 
 // default route
 app.get('/', (req, res) => {
