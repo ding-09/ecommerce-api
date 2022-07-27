@@ -7,7 +7,7 @@ body {
 @media screen and (min-width: 768px) {
   body {
     max-width: 80%;
-    margin: 4rem auto;
+    margin: 6rem auto 4rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -18,7 +18,7 @@ body {
 @media screen and (min-width: 1200px) {
   body {
     max-width: 70%;
-    margin: 8rem auto 4rem;
+    margin: 12rem auto 4rem;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -30,7 +30,7 @@ body {
 
 h2,
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 @media screen and (min-width: 768px) {
   h2,
@@ -41,12 +41,12 @@ h3 {
 @media screen and (min-width: 1200px) {
   h2,
 h3 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 
 h2 {
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
   h2 {
@@ -68,7 +68,7 @@ h3 {
 }
 
 .base-url {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 @media screen and (min-width: 768px) {
   .base-url {
@@ -85,16 +85,6 @@ h3 {
   color: #f9e361;
   text-transform: lowercase;
   letter-spacing: 0;
-}
-@media screen and (min-width: 768px) {
-  .url {
-    font-size: 1.6rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .url {
-    font-size: 1.8rem;
-  }
 }
 
 footer, code, .description {
@@ -123,25 +113,25 @@ html {
 
 body {
   font-family: "Courier Prime", monospace;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: 0.1rem;
 }
 @media screen and (min-width: 768px) {
   body {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
 header {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
 }
 header h1 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 header p {
@@ -152,8 +142,11 @@ header p {
     margin-bottom: 4rem;
   }
   header h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     margin-bottom: 1.2rem;
+  }
+  header p {
+    line-height: 2.4rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -161,7 +154,7 @@ header p {
     margin-bottom: 4.8rem;
   }
   header h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -299,28 +292,38 @@ footer a {
 .routes .container {
   display: grid;
   grid-template-columns: minmax(30rem, 1fr);
-  gap: 4rem;
+  gap: 4.2rem;
 }
 .routes .container .route h3 {
   text-transform: uppercase;
 }
 .routes .container .route .pathname {
   font-weight: 700;
+  font-size: 1.4rem;
 }
 .routes .container .route .description {
   letter-spacing: 0;
 }
 @media screen and (min-width: 768px) {
   .routes {
-    margin-bottom: 10rem;
+    margin-bottom: 6.4rem;
   }
   .routes .container {
     gap: 5.6rem;
   }
+  .routes .container .route .pathname {
+    font-size: 1.6rem;
+  }
 }
 @media screen and (min-width: 1200px) {
+  .routes {
+    margin-bottom: 8rem;
+  }
   .routes .container {
     gap: 8rem;
+  }
+  .routes .container .route .pathname {
+    font-size: 1.8rem;
   }
 }
 

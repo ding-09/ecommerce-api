@@ -7,14 +7,14 @@ body {
   margin: 3rem auto;
   @media screen and (min-width: variables.$responsive-md) {
     max-width: 80%;
-    margin: 4rem auto;
+    margin: 6rem auto 4rem;
   }
   @media screen and (min-width: variables.$responsive-lg) {
     margin: 5.6rem auto 4rem;
   }
   @media screen and (min-width: variables.$responsive-xl) {
     max-width: 70%;
-    margin: 8rem auto 4rem;
+    margin: 12rem auto 4rem;
   }
   @media screen and (min-width: variables.$responsive-2xl) {
     max-width: 65%;
@@ -24,17 +24,17 @@ body {
 
 h2,
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   @media screen and (min-width: variables.$responsive-md) {
     font-size: 2rem;
   }
   @media screen and (min-width: variables.$responsive-xl) {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
   }
 }
 
 h2 {
-  margin-bottom: 0.6rem;
+  margin-bottom: 1rem;
   @media screen and (min-width: variables.$responsive-md) {
     margin-bottom: 1.2rem;
   }
@@ -52,7 +52,7 @@ h3 {
 }
 
 .base-url {
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
   @media screen and (min-width: variables.$responsive-md) {
     margin-bottom: 4rem;
   }
@@ -65,12 +65,6 @@ h3 {
   color: #f9e361;
   text-transform: lowercase;
   letter-spacing: 0;
-  @media screen and (min-width: variables.$responsive-md) {
-    font-size: 1.6rem;
-  }
-  @media screen and (min-width: variables.$responsive-xl) {
-    font-size: 1.8rem;
-  }
 }
 
 footer, code, .description {

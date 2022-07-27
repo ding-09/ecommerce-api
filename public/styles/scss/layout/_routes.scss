@@ -5,13 +5,14 @@
   .container {
     display: grid;
     grid-template-columns: minmax(30rem, 1fr);
-    gap: 4rem;
+    gap: 4.2rem;
     .route {
       h3 {
         text-transform: uppercase;
       }
       .pathname {
         font-weight: 700;
+        font-size: 1.4rem;
       }
       .description {
         letter-spacing: 0;
@@ -20,14 +21,25 @@
   }
   // media query
   @media screen and (min-width: variables.$responsive-md) {
-    margin-bottom: 10rem;
+    margin-bottom: 6.4rem;
     .container {
       gap: 5.6rem;
+      .route {
+        .pathname {
+          font-size: 1.6rem;
+        }
+      }
     }
   }
   @media screen and (min-width: variables.$responsive-xl) {
+    margin-bottom: 8rem;
     .container {
       gap: 8rem;
+      .route {
+        .pathname {
+          font-size: 1.8rem;
+        }
+      }
     }
   }
 }
