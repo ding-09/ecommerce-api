@@ -297,8 +297,8 @@ footer a {
   margin-bottom: 5.2rem;
 }
 .routes .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(30rem, 1fr);
   gap: 4rem;
 }
 .routes .container .route h3 {
